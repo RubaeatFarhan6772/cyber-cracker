@@ -1,0 +1,132 @@
+/* Reset and Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2f;
+    color: white;
+    text-align: center;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #2a2a3a;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: cyan;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: cyan;
+}
+
+/* Hero Section */
+header {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #001f3f, #005f73);
+    color: white;
+    padding: 50px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Enroll Button */
+button {
+    background: cyan;
+    color: black;
+    font-size: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+    background: lime;
+    transform: scale(1.1);
+}
+
+/* Sections */
+section {
+    padding: 80px 10%;
+    margin-top: 50px;
+}
+
+/* Course Cards */
+.course-card {
+    display: inline-block;
+    background: #2a2a3a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    margin: 15px;
+    transition: transform 0.3s;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+    background: #3a3a4a;
+}
+
+/* Contact Section */
+#contact {
+    background: #2a2a3a;
+    padding: 50px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: #ddd;
+}
+
+.dark-mode nav {
+    background: #181818;
+}
+
+.dark-mode .course-card {
+    background: #181818;
+}
